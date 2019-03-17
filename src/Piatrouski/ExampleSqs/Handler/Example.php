@@ -6,7 +6,7 @@
 namespace App\Piatrouski\ExampleSqs\Handler;
 
 use App\Piatrouski\ExampleSqs\Helper\Data;
-use App\Piatrouski\ExampleSqs\Model\Example as ExampleModel;
+use App\Piatrouski\ExampleSqs\Message\Example as ExampleMessage;
 use Psr\Log\LoggerInterface;
 use Symfony\Component\Messenger\Handler\MessageHandlerInterface;
 
@@ -40,7 +40,7 @@ class Example
         $this->_helper = $helper;
     }
 
-    public function __invoke(ExampleModel $message)
+    public function __invoke(ExampleMessage $message)
     {
         $this->_logger->debug($message->getFoo());
         $this->_logger->debug($this->_helper->transformMessage($message->getFoo()));

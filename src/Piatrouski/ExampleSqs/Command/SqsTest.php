@@ -5,7 +5,7 @@
 
 namespace App\Piatrouski\ExampleSqs\Command;
 
-use App\Piatrouski\ExampleSqs\Model\Example;
+use App\Piatrouski\ExampleSqs\Message\Example;
 use Psr\Log\LoggerInterface;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;

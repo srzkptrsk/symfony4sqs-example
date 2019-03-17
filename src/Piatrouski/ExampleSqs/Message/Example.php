@@ -3,11 +3,11 @@
  * @author Siaržuk Piatroŭski (siarzuk@piatrouski.com)
  */
 
-namespace App\Piatrouski\ExampleSqs\Model;
+namespace App\Piatrouski\ExampleSqs\Message;
 
 /**
  * Class Example
- * @package App\Piatrouski\ExampleSqs\Model
+ * @package App\Piatrouski\ExampleSqs\Message
  */
 class Example
 {
