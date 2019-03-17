@@ -1,0 +1,7 @@
+framework:
+    messenger:
+        transports:
+            sqs: enqueue://default?topic[name]=YOUR_QUEUE_NAME&queue[name]=YOUR_QUEUE_NAME&receiveTimeout=3
+
+        routing:
+            'App\Piatrouski\ExampleSqs\Model\Example': sqs
